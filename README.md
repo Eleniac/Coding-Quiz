@@ -1,8 +1,27 @@
 # Coding-Quiz
 # Description
+
+
 # Installation
+To be able to code this project you will need a code editor such as Visual Studio Code. You will need a browser such as Google Chrome or Safari to open the webpage once it has been completed and to make sure you are making the correct adjustments as you go on. 
+
+The following programs are recommended: OX terminal, Visual Studio Code, and a 1.6 GHz or faster processor to run Visual Studio Code.
+
+``
+https://github.com/Eleniac/Coding-Quiz
+
+``
+
 # Usage
+
+
+
+
+
+
+
 # Credits
+[University-of-Minnesota-Boot-Camp] (https://umn.bootcampcontent.com/University-of-Minnesota-Boot-Camp/UofM-VIRT-FSF-PT-06-2022-U-LOLC)
 # License
 MIT License
 
