@@ -9,14 +9,20 @@ var button4 = document.querySelector ("#button4");
 
 //need an array with different correct answers (A, B, C, D)
 
-//need appendchild to attach new answers to the page when clicked
 
-//need for loop
+//need for loop to cycle through when they get the wrong or correct answer
+
+
+//call the H1 tag to append the question
+//call the Li tag to append the answer options
+//alert game over triggered once timer runs out 
+//needs to store the scores
+
 
 
 
 //timer section
-var timeEl =document.querySelector("#time");
+var time =document.querySelector("#timer");
 var secondsleft= 60;
 
 function setTime() {
@@ -31,18 +37,6 @@ timeEl.textContent =secondsLeft + "seconds left until you are unable to answer t
  }
  1000);
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
