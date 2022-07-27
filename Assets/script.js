@@ -5,6 +5,10 @@ var button3 = document.querySelector("#button3");
 var button4 = document.querySelector ("#button4");
 var time =document.querySelector (".timeEl")
 
+
+//function #1 the start of the quiz
+//function #2 first set of questions in an array 
+//for loop with answers
 //get element by ID
 //need an array with different correct answers (A, B, C, D)
 
