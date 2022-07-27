@@ -3,7 +3,7 @@ var button1 = document.querySelector ("#button1");
 var button2 = document.querySelector ("#button2");
 var button3 = document.querySelector("#button3");
 var button4 = document.querySelector ("#button4");
-
+var time =document.querySelector (".timeEl")
 
 //get element by ID
 
@@ -22,20 +22,33 @@ var button4 = document.querySelector ("#button4");
 
 
 //timer section
+//if they get a question wrong time is subtracted from the timer
+
 var time =document.querySelector("#timer");
 var secondsleft= 60;
 
 function setTime() {
 
+    //timer function
 var timerInterval =setInterval (function() {
-    secondsLeft--;
-timeEl.textContent =secondsLeft + "seconds left until you are unable to answer the question";
+    secondsLeft--; //counting backwards by 1
+timeEl.textContent =secondsLeft + //concat string
+"seconds left until you are unable to answer the question";
+
+//when seconds left reaches zero
  if(secondsLeft === 0) {
 
+    //stops timer
     clearInterval(timerInterval);
+
+    //send message add alert here 
     sendMessage ();
- }
- 1000);
+
+ }1000);
+}
+function sendMessage() {
+    timeEl.textcontent = "";
+    alert("Game Over");
 }
 
 
