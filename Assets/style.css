@@ -19,4 +19,8 @@ height: 40px;
 size: 300px;
 }
   
+#clock {
+    flex-wrap: wrap;
+    size: 50px;
+}
   
