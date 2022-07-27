@@ -6,7 +6,6 @@ var button4 = document.querySelector ("#button4");
 var time =document.querySelector (".timeEl")
 
 //get element by ID
-
 //need an array with different correct answers (A, B, C, D)
 
 
@@ -25,28 +24,28 @@ var time =document.querySelector (".timeEl")
 //if they get a question wrong time is subtracted from the timer
 
 var time =document.querySelector("#timer");
-var secondsleft= 60;
+var timeleft= 45;
 
 function setTime() {
 
     //timer function
 var timerInterval =setInterval (function() {
-    secondsLeft--; //counting backwards by 1
-timeEl.textContent =secondsLeft + //concat string
-"seconds left until you are unable to answer the question";
+    timeLeft--; //counting backwards by 1
+timeEl.textContent =timeLeft + //concat string
+"Seconds left until you are unable to answer the question";
 
-//when seconds left reaches zero
- if(secondsLeft === 0) {
+//when seconds left reaches zero 
+ if(timeLeft === 0) {
 
     //stops timer
     clearInterval(timerInterval);
 
     //send message add alert here 
-    sendMessage ();
+    displayMessage ();
 
- }1000);
+ }1000);//shows we are counting in seconds
 }
-function sendMessage() {
+function displayMessage() {
     timeEl.textcontent = "";
     alert("Game Over");
 }
