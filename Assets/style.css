@@ -1,25 +1,25 @@
-header{
-    display:flex;
-    align-items: center;
-    font-size: 175px;
-}   
+header {
+  display: flex;
+  align-items: center;
+  font-size: 175px;
+}
 body {
-    display:flex;
-    align-items:center;
-    flex-direction: column;
-    background-color: rgb(117, 142, 142);
-    font-size: large;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgb(117, 142, 142);
+  font-size: large;
 }
 
 .buttons {
-list-style: none;
-object-position: center;
-border: none;
-height: 40px;
-size: 300px;
+  list-style: none;
+  object-position: center;
+  border: none;
+  height: 40px;
+  size: 300px;
 }
-  
+
 #clock {
-width:400px;
-height:300px;
-  
+  width: 400px;
+  height: 300px;
+}
