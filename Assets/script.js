@@ -1,21 +1,23 @@
-var button1 = document.getElementById ("#button1");
-var button2 = document.getElementById ("#button2");
-var button3 = document.getElementById ("#button3");
-var button4 = document.getElementById  ("#button4");
+//buttons Id's
+var button1 = document.querySelector ("#button1");
+var button2 = document.querySelector ("#button2");
+var button3 = document.querySelector("#button3");
+var button4 = document.querySelector ("#button4");
+
+
+//get element by ID
+
+//need an array with different correct answers (A, B, C, D)
+
+//need appendchild to attach new answers to the page when clicked
+
+//need for loop
 
 
 
-
-
-
-
-
-
+//timer section
 var timeEl =document.querySelector("#time");
-
-var mainEl = document.getElementById("main");
-
-var secondsleft= 10;
+var secondsleft= 60;
 
 function setTime() {
 
