@@ -4,7 +4,7 @@ var button2 = document.querySelector ("#button2");
 var button3 = document.querySelector("#button3");
 var button4 = document.querySelector ("#button4");
 var time =document.querySelector (".timeEl")
-
+var startQuiz = document.quearySelector ("#start")
 
 //function #1 the start of the quiz
 //function #2 first set of questions in an array 
@@ -30,7 +30,7 @@ var time =document.querySelector (".timeEl")
 var time =document.querySelector("#timer");
 var timeleft= 45;
 
-function setTime() {
+function time() {
 
     //timer function
 var timerInterval =setInterval (function() {

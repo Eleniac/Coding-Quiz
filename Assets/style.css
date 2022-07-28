@@ -11,6 +11,10 @@ body {
   font-size: large;
 }
 
+.start {
+  display: none;
+}
+
 .buttons {
   list-style: none;
   object-position: center;
