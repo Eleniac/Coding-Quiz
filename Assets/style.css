@@ -16,6 +16,7 @@ body {
 }
 
 .buttons {
+  display: none;
   list-style: none;
   object-position: center;
   border: none;

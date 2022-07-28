@@ -3,6 +3,7 @@ var button1 = document.querySelector ("#button1");
 var button2 = document.querySelector ("#button2");
 var button3 = document.querySelector("#button3");
 var button4 = document.querySelector ("#button4");
+var buttons = document.querySelector (".buttons")
 var time =document.querySelector (".timeEl")
 var startQuiz = document.quearySelector ("#start")
 
@@ -11,15 +12,23 @@ var startQuiz = document.quearySelector ("#start")
 //for loop with answers
 //get element by ID
 //need an array with different correct answers (A, B, C, D)
-
-
 //need for loop to cycle through when they get the wrong or correct answer
 
+function (){
+    
+}
+startQuiz.addEventListener('click', ()=>) {
+    startQuiz.style.display = "none";
 
-//call the H1 tag to append the question
-//call the Li tag to append the answer options
-//alert game over triggered once timer runs out 
-//needs to store the scores
+    startQuiz = document.getElementById('start');
+    startQuiz.style.display = "block";
+}
+buttons.addEventListener ('click', ()=>) {
+    buttons.style.display = "none";
+
+    buttons = document.getElementById('buttons');
+    buttons.style.display = 'block';
+}
 
 
 
