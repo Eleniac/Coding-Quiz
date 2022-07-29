@@ -8,7 +8,7 @@ var time = document.querySelector (".timeEl")
 var startButton = document.querySelector ("#start")
 var time =document.querySelector("#timer");
 var questionsContainer = document.querySelector(".questions-container")
-var questionOne = document.querySelector ("#question-text");
+var questionOneButton = document.querySelector ("#question-text");
 var timeleft= 45;
 var questionIndex = 0
 var questionsArray = [
@@ -39,15 +39,6 @@ var questionsArray = [
 ]
 
 
-
-//for loop with answers
-//timer begins as soon as first set of questions appear
-//timer counts down while user answers questions
-//need for loop to cycle through when they get the wrong or correct answer
-
-
-//make questions text equal to questions array text
-
 function codingStart(){
  
     startButton.style.display = "none";
@@ -68,11 +59,13 @@ questionsContainer.style.display = "block";
 
 startButton.addEventListener('click', codingStart) 
 
+//function2 moving past the first set of questions
 function questionOne(){
-    questionOne.textContent=questionsArray[questionsIndex].choices [0]
+    questionOneButton.style.display = "block";
+   button1.textContent=questionsArray[questionsIndex].choices [0]
     questionsIndex++
 }
-questionOne.addEventListener('click', questionOne) 
+questionOneButton.addEventListener('click', questionOne) 
 
 
 
@@ -95,27 +88,23 @@ questionOne.addEventListener('click', questionOne)
 
 // function time() {
 
-//     //timer function
 // var timerInterval =setInterval (function() {
-//     timeLeft--; //counting backwards by 1
+// timeLeft--; //counting backwards by 1
 // timeEl.textContent =timeLeft + //concat string
 // "Seconds left until you are unable to answer the question";
 
-// //when seconds left reaches zero 
-//  if(timeLeft === 0) {
+// if(timeLeft === 0) {
 
-//     //stops timer
-//     clearInterval(timerInterval);
+// clearInterval(timerInterval);
 
-//     //send message add alert here 
-//     displayMessage ();
+// displayMessage ();
 
-//  }1000);//shows we are counting in seconds
+//  }1000);
+//  }
+// function displayMessage() {
+//     timeEl.textcontent = "";
+//     alert("Game Over");
 // }
-function displayMessage() {
-    timeEl.textcontent = "";
-    alert("Game Over");
-}
 
 
 
@@ -124,7 +113,6 @@ function displayMessage() {
 
 //README 
 
-//AS A coding boot camp student
 //I WANT to take a timed quiz on JavaScript fundamentals that stores high scores
 //SO THAT I can gauge my progress compared to my peers
 //GIVEN I am taking a code quiz

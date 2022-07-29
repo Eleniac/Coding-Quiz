@@ -1,6 +1,6 @@
 # Coding-Quiz
 # Description
-
+This is a coding quiz to help the user gauge how well they know coding information. The quiz is timed and multiple choice. The quiz uses local storage to be able to save data as the user continues on with the quiz. 
 
 # Installation
 To be able to code this project you will need a code editor such as Visual Studio Code. You will need a browser such as Google Chrome or Safari to open the webpage once it has been completed and to make sure you are making the correct adjustments as you go on. 
@@ -13,7 +13,7 @@ https://github.com/Eleniac/Coding-Quiz
 ``
 
 # Usage
-
+This coding quiz utilizes HTML, CSS and Javascript. The HTML document provides the structure for the quiz layout and hwo the buttons and timer will show on the page. 
 
 
 
