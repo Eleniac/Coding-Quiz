@@ -13,7 +13,7 @@ https://github.com/Eleniac/Coding-Quiz
 ``
 
 # Usage
-This coding quiz utilizes HTML, CSS and Javascript. The HTML document provides the structure for the quiz layout and how the buttons and timer will show on the page. The css provides a standard style for the page and uses tags and classes to identify specific buttons. Javascript utilizes functions to create transitions during the quiz. Javascript 
+This coding quiz utilizes HTML, CSS and Javascript. The HTML document provides the structure for the quiz layout and how the buttons and timer will show on the page. The css provides a standard style for the page and uses tags and classes to identify specific buttons. Javascript utilizes functions to create transitions during the quiz. Javascript uses the timeInterval to have the timer running during the quiz and local storage to save scores.  
 
 
 

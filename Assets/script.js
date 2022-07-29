@@ -63,6 +63,7 @@ function questionOne(){
     questionOneButton.style.display = "block";
    button1.textContent=questionsArray[questionsIndex].choices [0]
     questionsIndex++
+  
 }
 questionOneButton.addEventListener('click', questionOne) 
 
@@ -87,7 +88,7 @@ questionOneButton.addEventListener('click', questionOne)
 
 // function time() {
 
-// var timerInterval =setInterval (function() {
+// var timerInterval =setInterval function() {
 // timeLeft--; //counting backwards by 1
 // timeEl.textContent =timeLeft + //concat string
 // "Seconds left until you are unable to answer the question";
@@ -102,8 +103,8 @@ questionOneButton.addEventListener('click', questionOne)
 //  }
 // function displayMessage() {
 //     timeEl.textcontent = "";
-//     alert("Game Over");
-// }
+//   alert("Game Over");
+//  }
 
 
 
