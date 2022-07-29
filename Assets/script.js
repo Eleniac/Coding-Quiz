@@ -4,31 +4,46 @@ var button2 = document.querySelector ("#button2");
 var button3 = document.querySelector("#button3");
 var button4 = document.querySelector ("#button4");
 var buttons = document.querySelector (".buttons")
-var time =document.querySelector (".timeEl")
-var startQuiz = document.quearySelector ("#start")
+var time = document.querySelector (".timeEl")
+var startButton = document.querySelector ("#start")
+var time =document.querySelector("#timer");
+var timeleft= 45;
+var questionsArray = [
+    {
+        
+    }
+]
 
 //function #1 the start of the quiz
+//when you click start the page changes to show first set of questions
 //function #2 first set of questions in an array 
 //for loop with answers
+//timer begins as soon as first set of questions appear
+//timer counts down while user answers questions
 //get element by ID
 //need an array with different correct answers (A, B, C, D)
 //need for loop to cycle through when they get the wrong or correct answer
 
-function (){
-    
-}
-startQuiz.addEventListener('click', ()=>) {
-    startQuiz.style.display = "none";
 
-    startQuiz = document.getElementById('start');
-    startQuiz.style.display = "block";
-}
-buttons.addEventListener ('click', ()=>) {
-    buttons.style.display = "none";
+//make questions text equal to questions array text
 
-    buttons = document.getElementById('buttons');
-    buttons.style.display = 'block';
+function codingStart(){
+ 
+    startButton.style.display = "none";
+
+    // startButton.style.display = "block";
+console.log ("quiz start");
 }
+
+startButton.addEventListener('click', codingStart()) 
+
+
+// buttons.addEventListener ('click', codingStart() ) {
+//     buttons.style.display = "none";
+
+//     buttons = document.getElementById('buttons');
+//     buttons.style.display = 'block';
+// }
 
 
 
@@ -36,28 +51,26 @@ buttons.addEventListener ('click', ()=>) {
 //timer section
 //if they get a question wrong time is subtracted from the timer
 
-var time =document.querySelector("#timer");
-var timeleft= 45;
 
-function time() {
+// function time() {
 
-    //timer function
-var timerInterval =setInterval (function() {
-    timeLeft--; //counting backwards by 1
-timeEl.textContent =timeLeft + //concat string
-"Seconds left until you are unable to answer the question";
+//     //timer function
+// var timerInterval =setInterval (function() {
+//     timeLeft--; //counting backwards by 1
+// timeEl.textContent =timeLeft + //concat string
+// "Seconds left until you are unable to answer the question";
 
-//when seconds left reaches zero 
- if(timeLeft === 0) {
+// //when seconds left reaches zero 
+//  if(timeLeft === 0) {
 
-    //stops timer
-    clearInterval(timerInterval);
+//     //stops timer
+//     clearInterval(timerInterval);
 
-    //send message add alert here 
-    displayMessage ();
+//     //send message add alert here 
+//     displayMessage ();
 
- }1000);//shows we are counting in seconds
-}
+//  }1000);//shows we are counting in seconds
+// }
 function displayMessage() {
     timeEl.textcontent = "";
     alert("Game Over");

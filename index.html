@@ -1,39 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Assets/style.css"
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Assets/style.css" />
     <title>Try and beat the timer!</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>Coding Quiz</header>
     <!--Buttons-->
     <div>
-        <h2></h2>
-           <ul class="starts">
-               <button id="start">Start</button>
-           </ul>
-       </div>
-  <div>
-     <h2></h2>
-        <ul class="buttons">
-            <li>A<button id="button1"></button></li>
-            <li>B<button id="button2"></button></li>
-            <li>C<button id="button3"></button></li>
-            <li>D<button id="button4"></button></li>
-        </ul>
+      <h2></h2>
+      <ul class="starts">
+        <button id="start">Start</button>
+      </ul>
+    </div>
+    <div class="questions-container">
+      <h2 id="question-text"></h2>
+      <ul class="buttons">
+        <li>A<button id="button1"></button></li>
+        <li>B<button id="button2"></button></li>
+        <li>C<button id="button3"></button></li>
+        <li>D<button id="button4"></button></li>
+      </ul>
     </div>
     <!--timer-->
-    <span class= timeEl id="timer"></span>
-    <br>
-    <br>
-    <br>
-   <!--image-->
+    <span class="timeEl" id="timer"></span>
+    <br />
+    <br />
+    <br />
+    <!--image-->
     <div>
-        <img id=clock src="https://raw.githubusercontent.com/Eleniac/Coding-Quiz/main/Assets/Images/icons8-team-dhZtNlvNE8M-unsplash.jpg">
+      <img
+        id="clock"
+        src="https://raw.githubusercontent.com/Eleniac/Coding-Quiz/main/Assets/Images/icons8-team-dhZtNlvNE8M-unsplash.jpg"
+      />
     </div>
-    <script src="/Assets/script.js"></script>
-</body>
+    <script src="Assets/script.js"></script>
+  </body>
 </html>
