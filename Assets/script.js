@@ -18,9 +18,21 @@ var questionsArray = [
        
     },
     {
-        question: "What is an array",
-        choices: ["A function", "An emoji", "List of Values", "Programming Language"],
+        question: "What is JavaScript",
+        choices: ["An element", "a computer game", "a kind of coffee", "Programming Language"],
+        answer: 4
+       
+    },
+    {
+        question: "What is a global attribute",
+        choices: ["A function", "used for all elements", "List of Values", "a tag"],
         answer: 2
+       
+    },
+    {
+        question: "What is Bootstrap",
+        choices: ["A function", "an attachment on a show", "List of Values", "A front-end framework"],
+        answer: 4
        
     },
 ]
