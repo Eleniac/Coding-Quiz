@@ -3,10 +3,9 @@ var button1 = document.querySelector ("#button1");
 var button2 = document.querySelector ("#button2");
 var button3 = document.querySelector("#button3");
 var button4 = document.querySelector ("#button4");
-var buttons = document.querySelector (".buttons")
-var time = document.querySelector (".timeEl")
-var startButton = document.querySelector ("#start")
-var time =document.querySelector("#timer");
+var buttons = document.querySelector (".buttons");
+var time = document.querySelector (".timeEl");
+var startButton = document.querySelector ("#start");
 var questionsContainer = document.querySelector(".questions-container")
 var questionOneButton = document.querySelector ("#question-text");
 var timeleft= 45;
@@ -38,7 +37,7 @@ var questionsArray = [
     },
 ]
 
-
+//function starting the quiz
 function codingStart(){
  
     startButton.style.display = "none";
