@@ -15,12 +15,16 @@ body {
   font-size: large;
 }
 
-.start {
+#start {
   display: block;
 }
 
+.questions-container{
+  display:none;
+}
+
 .buttons {
-  display: none;
+  display: block;
   list-style: none;
   object-position: center;
   border: none;

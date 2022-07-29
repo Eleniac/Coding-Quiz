@@ -7,11 +7,22 @@ var buttons = document.querySelector (".buttons")
 var time = document.querySelector (".timeEl")
 var startButton = document.querySelector ("#start")
 var time =document.querySelector("#timer");
+var questionsContainer = document.querySelector(".questions-container")
 var timeleft= 45;
+var questionIndex = 0
 var questionsArray = [
     {
-        
-    }
+        question: "What is an array",
+        choices: ["A function", "An emoji", "List of Values", "Programming Language"],
+        answer: 2
+       
+    },
+    {
+        question: "What is an array",
+        choices: ["A function", "An emoji", "List of Values", "Programming Language"],
+        answer: 2
+       
+    },
 ]
 
 //function #1 the start of the quiz
@@ -30,12 +41,15 @@ var questionsArray = [
 function codingStart(){
  
     startButton.style.display = "none";
+button1.textContent=questionsArray[questionIndex].choices[0]
+questionIndex++
 
-    // startButton.style.display = "block";
+console.log(button1)
+questionsContainer.style.display = "block";
 console.log ("quiz start");
 }
 
-startButton.addEventListener('click', codingStart()) 
+startButton.addEventListener('click', codingStart) 
 
 
 // buttons.addEventListener ('click', codingStart() ) {
