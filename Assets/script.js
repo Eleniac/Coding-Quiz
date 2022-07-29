@@ -8,6 +8,7 @@ var time = document.querySelector (".timeEl")
 var startButton = document.querySelector ("#start")
 var time =document.querySelector("#timer");
 var questionsContainer = document.querySelector(".questions-container")
+var questionOne = document.querySelector ("#question-text");
 var timeleft= 45;
 var questionIndex = 0
 var questionsArray = [
@@ -19,32 +20,29 @@ var questionsArray = [
     },
     {
         question: "What is JavaScript",
-        choices: ["An element", "a computer game", "a kind of coffee", "Programming Language"],
+        choices: ["An element", "A computer game", "A kind of coffee", "Programming Language"],
         answer: 4
        
     },
     {
         question: "What is a global attribute",
-        choices: ["A function", "used for all elements", "List of Values", "a tag"],
+        choices: ["A function", "used for all elements", "List of Values", "A tag"],
         answer: 2
        
     },
     {
         question: "What is Bootstrap",
-        choices: ["A function", "an attachment on a show", "List of Values", "A front-end framework"],
+        choices: ["A function", "An attachment on a show", "List of Values", "A front-end framework"],
         answer: 4
        
     },
 ]
 
-//function #1 the start of the quiz
-//when you click start the page changes to show first set of questions
-//function #2 first set of questions in an array 
+
+
 //for loop with answers
 //timer begins as soon as first set of questions appear
 //timer counts down while user answers questions
-//get element by ID
-//need an array with different correct answers (A, B, C, D)
 //need for loop to cycle through when they get the wrong or correct answer
 
 
@@ -56,12 +54,29 @@ function codingStart(){
 button1.textContent=questionsArray[questionIndex].choices[0]
 questionIndex++
 
-console.log(button1)
+button2.textContent=questionsArray[questionIndex].choices[1]
+questionIndex++
+
+button3.textContent=questionsArray[questionIndex].choices[2]
+questionIndex++
+
+button4.textContent=questionsArray[questionIndex].choices[3]
+questionIndex++
+
 questionsContainer.style.display = "block";
-console.log ("quiz start");
 }
 
 startButton.addEventListener('click', codingStart) 
+
+function questionOne(){
+    questionOne.textContent=questionsArray[questionsIndex].choices [0]
+    questionsIndex++
+}
+questionOne.addEventListener('click', questionOne) 
+
+
+
+
 
 
 // buttons.addEventListener ('click', codingStart() ) {
