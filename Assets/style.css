@@ -1,3 +1,7 @@
+:root{
+  font-family: 'EB Garamond', serif;
+}
+
 header {
   display: flex;
   align-items: center;
