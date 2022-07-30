@@ -20,7 +20,7 @@ body {
 }
 
 #questionContent {
-
+  display:block;
  }
 
 .hide {
