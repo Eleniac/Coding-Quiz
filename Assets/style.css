@@ -1,5 +1,6 @@
 :root{
   font-family: 'EB Garamond', serif;
+  background-color:rgb(117, 142, 142); ;
 }
 
 header {
@@ -11,7 +12,6 @@ body {
   display: flex;
   align-items: center;
   flex-direction: column;
-  background-color: rgb(117, 142, 142);
   font-size: large;
 }
 
@@ -19,11 +19,17 @@ body {
   display: block;
 }
 
+#questionContent {
+
+ }
 
 .hide {
   display:none;
 }
 
+#end-screen {
+
+}
 
 .choices {
   display: block;
