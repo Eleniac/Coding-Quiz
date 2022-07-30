@@ -90,7 +90,7 @@ questionOneButton.addEventListener('click', questionOne)
 
 // var timerInterval =setInterval function() {
 // timeLeft--; //counting backwards by 1
-// timeEl.textContent =timeLeft + //concat string
+// time.textContent =timeLeft + //concat string
 // "Seconds left until you are unable to answer the question";
 
 // if(timeLeft === 0) {
@@ -102,7 +102,7 @@ questionOneButton.addEventListener('click', questionOne)
 //  }1000);
 //  }
 // function displayMessage() {
-//     timeEl.textcontent = "";
+//     time.textcontent = "";
 //   alert("Game Over");
 //  }
 

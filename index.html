@@ -8,27 +8,27 @@
     <title>Coding Quiz</title>
   </head>
   <body>
-    <header>Coding Quiz</header>
-    <!--Buttons-->
-    <div>
-      <h2></h2>
+    <div>High Scores</div>
+
+    <div>Time</div>
+
+    <div class="wrapper">
+      <div class="start" id="start-screen">
+        <h1>Coding Quiz</h1>
         <button id="start">Start</button>
+      </div>
+      <div id="questions" class="hide">
+        <h2 id="question-text">Question</h2>
+        <div id="choices" class="choices"></div>
+      </div>
+      <div id="end-screen" class="hide">
+        <h2>Game Over!
+          <p>Your final score is:</p>
+          <p>Enter your initials: <input type="text" id="Initials"/><button id="submit">Submit</button></p>
+        </h2>
+      </div>
     </div>
-    <div class="questions-container">
-      <h2 id="question-text">Question</h2>
-      <ul class="buttons">
-        <li><div id="button1">1</div></li>
-        <li><div id="button2">2</div></li>
-        <li><div id="button3">3</div></li>
-        <li><div id="button4">4</div></li>
-      </ul>
-    </div>
-    <!--timer-->
-    <span class="timeEl" id="timer"></span>
-    <br />
-    <br />
-    <br />
-    <!--image-->
+
     <div>
       <img
         id="clock"
