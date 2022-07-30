@@ -1,8 +1,4 @@
 //buttons Id's
-var button1 = document.querySelector ("#button1");
-var button2 = document.querySelector ("#button2");
-var button3 = document.querySelector("#button3");
-var button4 = document.querySelector ("#button4");
 var buttons = document.querySelector (".buttons");
 var time = document.querySelector (".timeEl");
 var startButton = document.querySelector ("#start");
@@ -36,8 +32,61 @@ var questionsArray = [
        
     },
 ]
+//function 5 local storage of the user's information and scores
+function saveScore () {
 
-//function starting the quiz
+}
+
+
+//an event listener has to be created to submit
+
+
+
+//function 4 end the game,  hide questions and display end screen, stop timer
+function endGame () {
+
+}
+
+
+
+
+//function 3 user selects choice and determines if it is right or wrong (where are you in the index) continue to next question through function 3 or end game
+function userChoice() {
+
+}
+
+
+//function 2 getting the questions and choices to display (pulling questions and one index)
+function questionsAppear() {
+
+}
+
+
+//need a function for time
+function time() {
+
+var timerInterval =setInterval function() {
+timeLeft--; //counting backwards by 1
+time.textContent =timeLeft + //concat string
+"Seconds left until you are unable to answer the question";
+
+if(timeLeft === 0) {
+
+clearInterval(timerInterval);
+
+displayMessage ();
+
+ }1000;
+ }
+
+function displayMessage() {
+  time.textcontent = "";
+  alert("Game Over");
+ }
+
+
+//start function one,start timer,hide the start screen
+//unhide questions
 function codingStart(){
  
     startButton.style.display = "none";
@@ -56,7 +105,13 @@ questionIndex++
 questionsContainer.style.display = "block";
 }
 
+
+
+//button start button available to click
 startButton.addEventListener('click', codingStart) 
+
+
+
 
 //function2 moving past the first set of questions
 function questionOne(){
@@ -82,29 +137,8 @@ questionOneButton.addEventListener('click', questionOne)
 
 
 
-//timer section
-//if they get a question wrong time is subtracted from the timer
 
 
-// function time() {
-
-// var timerInterval =setInterval function() {
-// timeLeft--; //counting backwards by 1
-// time.textContent =timeLeft + //concat string
-// "Seconds left until you are unable to answer the question";
-
-// if(timeLeft === 0) {
-
-// clearInterval(timerInterval);
-
-// displayMessage ();
-
-//  }1000);
-//  }
-// function displayMessage() {
-//     time.textcontent = "";
-//   alert("Game Over");
-//  }
 
 
 
