@@ -1,10 +1,11 @@
 //buttons Id's
 var startBtn = document.querySelector("#start");
-var choices = document.querySelector(".choices");
 var questionsArray = document.querySelector("#questions");
-var endGame = document.querySelector("#end-screen");
+var choices = document.querySelector(".choices");
+var gameOver = document.querySelector("#end-screen");
 var timerEl = document.querySelector("#count");
 var questionsArrayIndex = 0;
+var score = document.querySelector("#initials")
 
 var questionsArray = ["What is an Array","What is JavaScript","What is a global attribute", "What is Bootstrap"] ;
 
@@ -33,10 +34,10 @@ startBtn.addEventListener("click", codingStart);
 function questionsAppear() {
   questionsArray.style.display = "block";
   questionsArray.textContent = questionsArray[0].choicesArray[0];
-     if (choicesArray = 2)
-        alert ("Correct!");
-    else (choicesArray !=2)
-        alert ("Try Again");
+    //  if (choicesArray = 2)
+    //     alert ("Correct!");
+    // else (choicesArray !=2)
+    //     alert ("Try Again");
   }
 
 questionsArray.addEventListener("click", questionsAppear);
@@ -46,24 +47,15 @@ questionsArray.addEventListener("click", questionsAppear);
 
 
 
-
-
-
-
-
 //Function #3 user selects choice and determines if it is right or wrong (where are you in the index) continue to next question through function 3 or end game
 function userChoice() {
-
-// for (var i=0; i< questionsArrayIndex.length; i++){
-//   +questionsArrayIndex[i] + ".";
-// }
 
 
 //an event listener has to be created to submit
 
+}
 
-
-
+choicesArray.addEventListener ("click", userChoice);
 
 
 
@@ -74,7 +66,7 @@ function endGame() {
 
 }
 
-
+gameOver.addEventListener ("click",endGame);
 
 
 
@@ -88,7 +80,7 @@ function saveScore() {
 
 }
 
-
+score.addEventListener ("submit", saveScore);
 
 
 
