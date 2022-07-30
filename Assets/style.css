@@ -19,11 +19,13 @@ body {
   display: block;
 }
 
-.hide{
+
+.hide {
   display:none;
 }
 
-.buttons {
+
+.choices {
   display: block;
   list-style: none;
   object-position: center;

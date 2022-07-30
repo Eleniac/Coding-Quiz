@@ -2,9 +2,8 @@
 var time = document.querySelector (".timeEl");
 var startBtn = document.querySelector ("#start");
 var choices = document.querySelector(".choices")
-var questions= document.querySelector ("#questions");
+var questionsArray=document.querySelector("#question-text")
 var timeleft= 45;
-var questionIndex = 0
 
 var choicesArray = ["A function", "An emoji", "List of Values", "Programming Language","An element", "A computer game", "A kind of coffee", "Programming Language","A variable", "used for all elements", "List of Values", "A tag","A program", "An attachment on a shoe", "List of Values", "A front-end framework"]
 
@@ -38,20 +37,22 @@ var questionsArray = ["What is an array","What is JavaScript", "What is a global
 function codingStart(){
  
     startBtn.style.display = "none";
-startBtn.textContent=questionsArray[questionIndex].choices[0]
-questionIndex++
+startBtn.textContent=questionsArray[0]
+startBtn.textContent=choicesArray[0-3]
+choicesArray++
     startBtn.style.display = "block";
 }
 
-//button start button available to click
+//button startBtn available to click
 startBtn.addEventListener('click', codingStart) 
 
 
 //Function #2 getting the questions and choices to display (pulling questions and one index)
 function questionsAppear() {
 questions.style.display = "block";
-   button1.textContent=questionsArray[questionsIndex].choices [0]
-    questionsIndex++
+   questionsArray.textContent=questionsArray[0]
+   startBtn.textContent=choicesArray[0-3]
+    choicesArray++
   
 }
 questions.addEventListener('click', questionsAppear) 
