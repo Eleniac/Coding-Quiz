@@ -19,7 +19,7 @@ body {
   display: block;
 }
 
-#questionContent {
+.questions {
   display:block;
  }
 
@@ -31,7 +31,7 @@ body {
 
 }
 
-.choices {
+.choices  {
   display: block;
   list-style: none;
   object-position: center;
