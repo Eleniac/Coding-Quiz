@@ -1,13 +1,14 @@
 //buttons Id's
 var startBtn = document.querySelector("#start");
+var btn = document.createElement("button");
 var questionsArray = document.querySelector("#questions");
 var choices = document.querySelector(".choices");
 var gameOver = document.querySelector("#end-screen");
 var timerEl = document.querySelector("#count");
-var questionsArrayIndex = 0;
 var score = document.querySelector("#initials")
 
-var questionsArray = ["What is an Array","What is JavaScript","What is a global attribute", "What is Bootstrap"] ;
+
+var questionsArray = ["What is an Array","What is JavaScript","What is a global attribute", "What is Bootstrap"];
 
 var choicesArray = ["A function","An emoji", "List of Values", "Programming Language","An element","A computer game","A kind of coffee", "Programming Language","Used for all elements" , "List of Values", "A tag", "a variable", "A program", "An attachment on a shoe", "A front-end framework", "List of Values"];
 
@@ -34,10 +35,8 @@ startBtn.addEventListener("click", codingStart);
 function questionsAppear() {
   questionsArray.style.display = "block";
   questionsArray.textContent = questionsArray[0].choicesArray[0];
-    //  if (choicesArray = 2)
-    //     alert ("Correct!");
-    // else (choicesArray !=2)
-    //     alert ("Try Again");
+  btn.innerHTML = "Click Me";
+  document.body.appendChild(btn);
   }
 
 questionsArray.addEventListener("click", questionsAppear);
