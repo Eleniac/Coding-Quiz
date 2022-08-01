@@ -20,8 +20,8 @@ var correctAnswerArray = ["2", "7", "8", "14"];
 
 function time() 
 
-var timerInterval =setInterval {
-timeLeft---, //counting backwards by 1
+var timerInterval =setInterval, {
+timeLeft //counting backwards by 1
 time.textContent =timeLeft + //concat string
 "Seconds left until you are unable to answer the question";
 
@@ -80,7 +80,9 @@ choicesArray.addEventListener ("click", userChoice);
 
 //Function #4 end the game,  hide questions and display end screen, stop timer
 function endGame() {
-
+  startBtn.style.display = "none";
+  startBtn.textContent = questionsArray[0];
+  startBtn.style.display = "block";
 
 
 }
