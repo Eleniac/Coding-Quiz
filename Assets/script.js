@@ -15,7 +15,29 @@ var choicesArray = ["A function","An emoji", "List of Values", "Programming Lang
 var correctAnswerArray = ["2", "7", "8", "14"];
 
 
-//Function #1 ,start timer,hide the start screen and unhide questions
+// Function #1 ,start timer,hide the start screen and unhide questions
+
+
+function time() 
+
+var timerInterval =setInterval {
+timeLeft---, //counting backwards by 1
+time.textContent =timeLeft + //concat string
+"Seconds left until you are unable to answer the question";
+
+if(timeLeft === 0) {
+
+clearInterval(timerInterval);
+
+displayMessage ();
+
+ }1000;
+ }
+
+function displayMessage() {
+  time.textcontent = "";
+  alert("Game Over")
+
 
 function codingStart() {
   startBtn.style.display = "none";
@@ -34,11 +56,10 @@ startBtn.addEventListener("click", codingStart);
 //Function #2 getting the questions and choices to display (pulling questions and one index)
 function questionsAppear() {
   questionsArray.style.display = "block";
-  questionsArray.textContent = questionsArray[0].choicesArray[0];
-  btn.innerHTML = "Click Me";
-  document.body.appendChild(btn);
+  questionsArray.textContent = questionsArray[0].choicesArray[0-3];
   }
 
+}
 questionsArray.addEventListener("click", questionsAppear);
 
 
@@ -48,9 +69,8 @@ questionsArray.addEventListener("click", questionsAppear);
 
 //Function #3 user selects choice and determines if it is right or wrong (where are you in the index) continue to next question through function 3 or end game
 function userChoice() {
-
-
-//an event listener has to be created to submit
+  questionsArray.style.display = "block";
+  questionsArray.textContent = questionsArray[0].choicesArray[0-3];
 
 }
 
@@ -84,23 +104,3 @@ score.addEventListener ("submit", saveScore);
 
 
 
-//TIMER FUNCTION
-// function time() {
-
-// var timerInterval =setInterval(function() {
-// timeLeft--; //counting backwards by 1
-// time.textContent =timeLeft + //concat string
-// "Seconds left until you are unable to answer the question";
-
-// if(timeLeft === 0) {
-
-// clearInterval(timerInterval);
-
-// displayMessage ();
-
-//  }1000;
-//  }
-
-// function displayMessage() {
-//   time.textcontent = "";
-//   alert("Game Over")
